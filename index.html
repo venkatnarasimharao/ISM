@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ISM Corporation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/imgs/header_icon.png">
+</head>
+
+<body>
+
+    <div>
+        <header class="d-flex justify-content-between align-items-center p-3 border-bottom bg-lt-primary">
+            <a href="index.html">
+                <img src="assets/imgs/logo.png" alt="ISM Logo" class="img-fluid" style="height:45px;">
+            </a>
+            <nav>
+                <!-- Desktop menu -->
+                <ul class="nav desktop-menu">
+                    <li class="nav-item"><a href="whoWeAre.html" class="text-primary nav-link active">Who we are</a>
+                    </li>
+                    <li class="nav-item"><a href="whatWeDo.html" class="text-primary nav-link">What we do</a></li>
+                    <li class="nav-item"><a href="whereWeAre.html" class="text-primary nav-link">Where we are</a></li>
+                    <li class="nav-item"><a href="workWithUs.html" class="text-primary nav-link">Work with us</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-search"></i><span
+                                class="visually-hidden">Search</span></a></li>
+                </ul>
+
+                <!-- Mobile hamburger menu -->
+                <div class="hamburger-menu">
+                    <a href="#" class="nav-link me-2"><i class="bi bi-search"></i><span
+                            class="visually-hidden">Search</span></a>
+                    <a href="javascript:void(0);" onclick="toggleMobileMenu(); return false;" id="hamburgerMenuBtn"
+                        class="nav-link text-primary" aria-label="Toggle navigation menu">
+                        <i class="bi bi-list" style="font-size: 1.5rem;"></i>
+                        <span class="visually-hidden">Menu</span>
+                    </a>
+                    <!-- Dropdown menu for mobile -->
+                    <div id="mobileMenu" class="mobile-menu">
+                        <ul class="nav flex-column">
+                            <li class="nav-item"><a href="whoWeAre.html" class="text-primary nav-link active">Who we
+                                    are</a></li>
+                            <li class="nav-item"><a href="whatWeDo.html" class="text-primary nav-link">What we do</a>
+                            </li>
+                            <li class="nav-item"><a href="whereWeAre.html" class="text-primary nav-link">Where we
+                                    are</a></li>
+                            <li class="nav-item"><a href="workWithUs.html" class="text-primary nav-link">Work with
+                                    us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="hero"
+            style="background: url('assets/imgs/home_bg_header.jpg') center center/cover no-repeat; background-size: cover; min-height: 500px;">
+            <div class="container text-white">
+                <div class="row">
+                    <div class="col-md-6 d-flex flex-column justify-content-center">
+                        <h1 class="text-primary heading-text-h1">ISM Corporation</h1>
+                        <h2 class="h3 text-dark">
+                            Empowering Lives with Access to Reproductive Healthcare Choices
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats text-white bg-primary py-4">
+            <div class="container d-flex justify-content-around text-center">
+                <div class="d-md-flex flex-row align-items-center justify-content-between stat-item">
+                    <h3 class="h1 mb-0 stat-number">8M</h3>
+                    <div class="d-flex flex-column mb-0 stat-text ms-md-3">
+                        <span class="stat-label">CYP</span>
+                        <span class="stat-label">Provided</span>
+                    </div>
+                </div>
+                <div class="d-md-flex flex-row align-items-center justify-content-between stat-item">
+                    <h3 class="h1 mb-0 stat-number">12M</h3>
+                    <div class="d-flex flex-column mb-0 stat-text ms-md-3">
+                        <span class="stat-label">Unintended</span>
+                        <span class="stat-label">Pregnancies Averted</span>
+                    </div>
+                </div>
+                <div class="d-md-flex flex-row align-items-center justify-content-between stat-item">
+                    <h3 class="h1 mb-0 stat-number">6M</h3>
+                    <div class="d-flex flex-column mb-0 stat-text ms-md-3">
+                        <span class="stat-label">Unsafe</span>
+                        <span class="stat-label">Abortions Averted</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid py-5">
+            <div class="row align-items-center flex-md-row flex-column">
+                <div class="col-12 col-md-4 mb-4 mb-md-0 d-flex justify-content-center">
+                    <img src="./assets/imgs/aboutISM.jpg" class="rounded img-fluid w-100" alt="Doctor with Patients"
+                        style="max-width:300px;">
+                </div>
+                <div class="col-12 col-md-8">
+                    <h2 class="text-primary">About Us</h2>
+                    <p>
+                        ISM Corporation is an international marketing organization based in Hyderabad, India. Our
+                        company is led by a team of seasoned professionals with experience in marketing, sales, and
+                        finance. We operate on the principle of collective wisdom to drive our strategic decisions and
+                        business operations.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid py-3">
+            <div class="row">
+                <div class="col-12 col-md-3 d-flex justify-content-center">
+                    <h2 class="text-primary mb-4">Our People</h2>
+                </div>
+            </div>
+            <div class="profile-card row align-items-center mb-5">
+                <div class="col-md-4 text-center mb-3 mb-md-0">
+                    <img src="./assets/imgs/placeholder.jpg" alt="Vivek Malhotra" class="img-fluid rounded shadow"
+                        style="max-width: 250px;">
+                </div>
+                <div class="col-md-8">
+                    <h2 class="text-primary">Vivek Malhotra</h2>
+                    <p>
+                        Vivek has 3 decades of expertise in conceptualizing, assessing, and executing contraceptive
+                        social marketing initiatives across diverse regions such as India, Uganda, Kenya, Zambia, Sri
+                        Lanka, Tanzania, Nepal, and Sudan. Currently at the helm of ISM Corporation Pvt Ltd as its
+                        Director, he has steered the organization into a prominent role as a leading social marketing
+                        entity. ISM, under his stewardship, has established itself as a significant provider of
+                        cost-effective family planning and reproductive health commodities to countless couples
+                        nationwide
+                    </p>
+                    <p>
+                        A distinguished chartered accountant accredited by The Institute of Chartered Accountants of
+                        India, Vivek commenced his professional journey within the financial realm at Population
+                        Services International. His trajectory led him to assume the role of Country Director for MSI
+                        Reproductive Choices in Uganda in 1995, before returning to India in 1999 to establish and lead
+                        PHSI.
+                    </p>
+                </div>
+            </div>
+
+            <div class="profile-card row align-items-center flex-md-row-reverse mb-5">
+                <div class="col-md-4 text-center mb-3 mb-md-0">
+                    <img src="./assets/imgs/placeholder.jpg" alt="Ashutosh Kaushik" class="img-fluid rounded shadow"
+                        style="max-width: 250px;">
+                </div>
+                <div class="col-md-8">
+                    <h2 class="text-primary">Ashutosh Kaushik</h2>
+                    <p>
+                        Mr. Ashutosh Kaushik has over two decades of distinguished experience across the corporate and
+                        development sectors. He has held senior positions within various international non-profit
+                        organizations. For the past ten years, Mr. Kaushik has specialized in the field of Sexual and
+                        Reproductive Health and Rights (SRHR), concentrating on contraception and safe abortion
+                        services. Currently, Mr. Kaushik serves as the Chief Executive Officer of the Foundation for
+                        Reproductive Health Services India (FRHS India). Under his leadership, FRHS India is committed
+                        to providing high-quality family planning and reproductive health services through diverse
+                        delivery channels. In addition to his role at FRHS India, Mr. Kaushik is a board member of the
+                        organization and acts as a trustee for the Sarvajan Unnati Bodhini Trust, a non-profit entity
+                        dedicated to comprehensive community development.
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="profile-card row align-items-center mb-5">
+                <div class="col-md-4 text-center mb-3 mb-md-0">
+                    <img src="./assets/imgs/placeholder.jpg" alt="P. Srinivas" class="img-fluid rounded shadow"
+                        style="max-width: 250px;">
+                </div>
+                <div class="col-md-8">
+                    <h2 class="text-primary">P. Srinivas</h2>
+                    <p>
+                        Srinivas, the current Director of Sales at ISM Corporation Pvt Ltd (ISMI), boasts over 23 years
+                        of strong experience in sales, marketing, and business management across diverse sectors.
+                        Commencing his journey as a Front-Line Sales Manager in PHSI, Srinivas has ascended the
+                        organizational hierarchy, garnering profound insights into the business landscape and strategic
+                        framework. His unwavering dedication and steadfast commitment are exemplified by his adept
+                        management of a large sales force.
+                    </p>
+                    <p>
+                        In his capacity as Director of Sales, Srinivas orchestrates all sales-related endeavours,
+                        encompassing marketing initiatives, talent acquisition, and the implementation of varied sales
+                        strategies aimed at fortifying ISM's competitive stance amidst industry rivals. Instrumental to
+                        the organization's expansion trajectory, he possesses a wealth of expertise in devising sales
+                        strategies and driving business growth. Drawing from an extensive collection of sales roles,
+                        on-time delivery, and compliance.
+                    </p>
+                </div>
+            </div>
+    </div>
+    </section>
+
+    <footer class="bg-lt-primary border-top">
+        <div class="container py-5">
+            <div class="row justify-content-between">
+                <div class="col-12 col-md-4 mb-4 text-center text-md-start">
+                    <img src="assets/imgs/logo.png" alt="ISM Logo" class="img-fluid mb-1"
+                        style="height:45px; width: 125px;">
+                    <div class="text-muted text-primary">
+                        <div id="shortText">Copyright © 2025 ISM Corporation<br>All rights reserved<br>
+                        ISM Corporation is an international marketing</div>
+                        <div id="fullText" style="display: none;">Copyright © 2025 ISM Corporation<br>All rights reserved<br>
+                        ISM Corporation is an international marketing organization based in Hyderabad, India. Our
+                        company is led by a team of seasoned professionals with experience in marketing, sales, and
+                        finance. We operate on the principle of collective wisdom to drive our strategic decisions and
+                        business operations.</div>
+                        <a href="#" id="toggleText" style="color: #0066cc; font-weight: 500;" onclick="toggleFooterText(); return false;">View More</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4 text-center text-md-start">
+                    <h5 class="text-primary">Company</h5>
+                    <div class="d-flex flex-wrap justify-content-center justify-content-md-start gap-3">
+                        <div class="d-flex flex-column">
+                            <a href="whoWeAre.html" class="text-primary text-decoration-none mb-2">Who we are</a>
+                            <a href="whatWeDo.html" class="text-primary text-decoration-none">What we do</a>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <a href="whereWeAre.html" class="text-primary text-decoration-none mb-2">Where we
+                                are</a>
+                            <a href="workWithUs.html" class="text-primary text-decoration-none">Work with us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4 text-center text-md-start">
+                    <h5 class="text-primary">Stay up to date</h5>
+                    <div class="position-relative mt-2" style="max-width: 300px; margin: 0 auto 0 0;">
+                        <input type="email" class="form-control pe-4" placeholder="Your email address">
+                        <img src="assets/imgs/icon.png" alt="Arrow Right" class="position-absolute"
+                            style="right: 10px; top: 50%; transform: translateY(-50%); height: 20px; cursor: pointer;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Inline script for hamburger menu
+        document.addEventListener('DOMContentLoaded', function () {
+            // Close menu when clicking outside
+            document.addEventListener('click', function (event) {
+                const mobileMenu = document.getElementById('mobileMenu');
+                const hamburgerBtn = document.getElementById('hamburgerMenuBtn');
+
+                if (mobileMenu && mobileMenu.classList.contains('show')) {
+                    if (!mobileMenu.contains(event.target) && (!hamburgerBtn || !hamburgerBtn.contains(event.target))) {
+                        mobileMenu.classList.remove('show');
+                    }
+                }
+            });
+
+            // Initialize - close menu on page load
+            const mobileMenu = document.getElementById('mobileMenu');
+            if (mobileMenu) {
+                mobileMenu.classList.remove('show');
+            }
+        });
+
+        // Toggle mobile menu function that can be called from anywhere
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            if (mobileMenu) {
+                mobileMenu.classList.toggle('show');
+            }
+        }
+
+        // Toggle footer text function
+        function toggleFooterText() {
+            const shortText = document.getElementById('shortText');
+            const fullText = document.getElementById('fullText');
+            const toggleButton = document.getElementById('toggleText');
+            
+            if (fullText.style.display === 'none') {
+                shortText.style.display = 'none';
+                fullText.style.display = 'block';
+                toggleButton.textContent = 'View Less';
+            } else {
+                shortText.style.display = 'block';
+                fullText.style.display = 'none';
+                toggleButton.textContent = 'View More';
+            }
+        }
+    </script>
+</body>
+
+</html>
