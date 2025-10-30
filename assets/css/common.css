@@ -1,3 +1,7 @@
+*{
+    font-family: 'Helvetica Neue Regular'
+}
+
 .text-primary {
     color: #1565A5 !important;
 }
@@ -46,11 +50,11 @@
     top: 100%;
     left: 0;
     background-color: #F5F7FA;
-    border: 1px solid rgba(0,0,0,0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 4px;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    min-width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    min-width: 150px;
     padding: 0.5rem 0;
 }
 
@@ -106,10 +110,10 @@
     top: 60px;
     right: 10px;
     background-color: #F5F7FA;
-    border: 1px solid rgba(0,0,0,0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 4px;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     min-width: 200px;
 }
 
@@ -125,14 +129,14 @@
 .mobile-menu .nav-link {
     padding: 10px 15px;
     display: block;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 @media (max-width: 767.98px) {
     .desktop-menu {
         display: none;
     }
-    
+
     .hamburger-menu {
         display: flex;
         align-items: center;
@@ -164,7 +168,7 @@
     .stats .stat-item {
         align-items: center;
     }
-    
+
     .stats .stat-number {
         margin-right: 15px;
     }
@@ -178,7 +182,7 @@
     .text-md-start .position-relative {
         margin: 0 auto !important;
     }
-    
+
     footer .col-12 h5 {
         text-align: center;
     }
@@ -190,34 +194,46 @@
         flex-direction: column !important;
         align-items: stretch !important;
     }
-    
+
     .stats .stat-item {
         display: flex !important;
         flex-direction: row !important;
         justify-content: space-between !important;
         align-items: center !important;
-        margin-bottom: 1rem !important;
+        margin-bottom: 1.5rem !important;
         padding: 0.5rem 1rem !important;
         width: 100% !important;
-
-         border-bottom: 1px solid rgba(255, 255, 255, 0.3)
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     }
 
     .stats .stat-item:last-child {
-      border-bottom: none !important;
+        border-bottom: none !important;
+        margin-bottom: 0 !important;
     }
 
-    
     .stats .stat-number {
         margin: 0 !important;
         flex-shrink: 0 !important;
+        text-align: left !important;
+        font-size: 2.2rem !important;
         order: 1 !important;
     }
-    
+
     .stats .stat-text {
-        order: 2 !important;
         margin: 0 !important;
-        margin-left: auto !important;
+        text-align: left !important;
+        min-width: 160px !important;
+        max-width: 160px !important;
+        order: 2 !important;
+        flex-shrink: 0 !important;
+    }
+
+    /* Ensure proper alignment */
+    .stats .stat-text .stat-label {
+        text-align: left !important;
+        display: block !important;
+        line-height: 1.2 !important;
+        white-space: nowrap !important;
     }
 }
 
@@ -272,69 +288,282 @@
 }
 
 .otc-ethical-section {
-  background: linear-gradient(135deg, #f5f7fa, #e0ecf7);
-  font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #e0ecf7);
+    font-family: 'Segoe UI', sans-serif;
 }
 
 .section-title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #1565A5;
-  margin-bottom: 0.75rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1565A5;
+    margin-bottom: 0.75rem;
 }
 
 .section-subtitle {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #1565A5;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1565A5;
 }
 
 .info-box {
-  background-color: #ffffff;
-  border-radius: 12px;
-  padding: 1.5rem;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
 }
 
 .info-box:hover {
-  transform: translateY(-4px);
+    transform: translateY(-4px);
 }
 
 .styled-list {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem;
 }
 
 .styled-list li {
-  display: flex;
-  align-items: center;
-  margin-bottom: 0.5rem;
-  font-size: 1rem;
-  color: #333;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #333;
 }
 
 .styled-list .icon {
-  font-size: 1.2rem;
-  color: #1565A5;
-  margin-right: 10px;
+    font-size: 1.2rem;
+    color: #1565A5;
+    margin-right: 10px;
 }
 
 .info-text {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: #444;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #444;
 }
 
 .image-wrapper {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 .img-stretch {
-  object-fit: fill;
-  width: 100%;
-  height: 100%;
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+}
+
+/* Product Item Responsive Improvements */
+.product-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.product-image {
+    flex-shrink: 0;
+}
+
+.product-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.product-content h6 {
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.product-description {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* Medium screen adjustments for products */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .product-item {
+        flex-direction: column !important;
+        text-align: center !important;
+        align-items: center !important;
+    }
+    
+    .product-image {
+        margin-right: 0 !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    .product-image img {
+        max-width: 200px !important;
+        height: 200px !important;
+        object-fit: contain !important;
+    }
+    
+    .product-content {
+        text-align: center !important;
+        max-width: 100% !important;
+    }
+    
+    .product-content h6 {
+        font-size: 1.1rem !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    .product-description {
+        font-size: 0.9rem !important;
+        max-width: 300px !important;
+        margin: 0 auto !important;
+    }
+}
+
+/* Contraceptives section responsive improvements */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .contraceptives-section .row {
+        justify-content: center !important;
+    }
+    
+    .contraceptives-section .col-md-6 {
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+        margin-bottom: 2rem !important;
+    }
+    
+    .contraceptives-section .col-lg-4:nth-child(3) {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+}
+
+/* IUD section specific responsive improvements */
+.iud-section .product-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.iud-section .product-image {
+    flex-shrink: 0;
+}
+
+.iud-section .product-content {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Ethical Division section specific improvements */
+.ethical-division .product-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.ethical-division .product-image {
+    flex-shrink: 0;
+    margin-right: 1.5rem;
+}
+
+.ethical-division .product-content {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Add borders to all product images */
+.product-image img,
+.product-image-container img,
+.ethical-division .product-image img,
+.iud-section .product-image img {
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+/* Medium screens (768px to 991px) - IUD section */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .iud-section .product-item {
+        flex-direction: column !important;
+        text-align: center !important;
+        align-items: center !important;
+    }
+    
+    .iud-section .product-image {
+        margin-right: 0 !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    .iud-section .product-image img {
+        max-width: 150px !important;
+        height: 150px !important;
+        object-fit: contain !important;
+    }
+    
+    .iud-section .product-content {
+        text-align: center !important;
+        max-width: 100% !important;
+    }
+    
+    .iud-section .product-content h6 {
+        font-size: 1.1rem !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    .iud-section .product-description {
+        font-size: 0.9rem !important;
+        max-width: 300px !important;
+        margin: 0 auto !important;
+    }
+}
+
+/* Large screens (992px and above) - maintain side-by-side layout */
+@media (min-width: 992px) {
+    .product-item {
+        flex-direction: row !important;
+        align-items: flex-start !important;
+        text-align: left !important;
+    }
+    
+    .product-image,
+    .product-image-container {
+        margin-right: 1.5rem !important;
+        margin-bottom: 0 !important;
+        flex-shrink: 0 !important;
+    }
+    
+    .product-content {
+        text-align: left !important;
+        flex: 1 !important;
+    }
+    
+    .ethical-division .product-item {
+        flex-direction: row !important;
+        align-items: flex-start !important;
+    }
+    
+    .ethical-division .product-image {
+        margin-right: 1.5rem !important;
+        margin-bottom: 0 !important;
+    }
+    
+    .ethical-division .product-content {
+        text-align: left !important;
+    }
+    
+    .iud-section .product-item {
+        flex-direction: row !important;
+        align-items: flex-start !important;
+    }
+    
+    .iud-section .product-image {
+        margin-right: 1.5rem !important;
+        margin-bottom: 0 !important;
+    }
+    
+    .iud-section .product-content {
+        text-align: left !important;
+    }
 }
