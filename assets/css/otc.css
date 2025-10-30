@@ -1,0 +1,36 @@
+.img-contraceptives-cards {
+    width: 220px;
+    height: 160px;
+}
+
+.img-Intra-cards {
+    height: 275px;
+    width: 420px;
+}
+
+.product-image-container {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 200px;  
+    width: 200px;   
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-right: 20px; 
+}
+
+.product-image-container img {
+    object-fit: contain;
+    max-height: 170px;
+    max-width: 170px;
+    display: block;
+    margin: 0 auto;
+}
+
+.d-flex .product-content {
+    width: calc(100% - 220px); 
+}

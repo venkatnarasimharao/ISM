@@ -1,0 +1,58 @@
+.hero {
+  position: relative;
+  min-height: 70vh;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.heading-text-h1 {
+  font-size: 66px !important;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 50vh;
+    padding: 3rem 1rem;
+    background-size: cover !important;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+  
+  .heading-text-h1 {
+    font-size: 40px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    min-height: 40vh;
+    background-position: center center !important;
+    background-attachment: scroll !important;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+  
+  .heading-text-h1 {
+    font-size: 32px !important;
+  }
+}

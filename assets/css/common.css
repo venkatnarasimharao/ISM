@@ -1,0 +1,340 @@
+.text-primary {
+    color: #1565A5 !important;
+}
+
+.bg-primary {
+    background-color: #1565A5 !important;
+}
+
+.bg-lt-primary {
+    background-color: #F5F7FA !important;
+}
+
+.nav-link.active {
+    outline: 1px solid #1565A5 !important;
+    outline-offset: -2px !important;
+}
+
+/* Desktop dropdown menu styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+}
+
+.dropdown-toggle::after {
+    content: '';
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: middle;
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-bottom: 0;
+    border-left: 4px solid transparent;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #F5F7FA;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 4px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    min-width: 200px;
+    padding: 0.5rem 0;
+}
+
+.dropdown-item {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: rgba(21, 101, 165, 0.1);
+}
+
+/* Mobile submenu styles */
+.mobile-submenu {
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.mobile-submenu .nav-item {
+    margin-top: 0.25rem;
+}
+
+/* Back button styles */
+.nav-link .bi-arrow-left {
+    transition: transform 0.2s ease-in-out;
+}
+
+.nav-link:hover .bi-arrow-left {
+    transform: translateX(-3px);
+}
+
+/* Mobile Navigation Styles */
+.hamburger-menu {
+    display: none;
+}
+
+.hamburger-menu a {
+    cursor: pointer !important;
+    pointer-events: auto !important;
+}
+
+.hamburger-menu .nav-link {
+    padding: 8px;
+    margin: 0 2px;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: #F5F7FA;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 4px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    min-width: 200px;
+}
+
+.mobile-menu.show {
+    display: block;
+}
+
+.mobile-menu .nav-item {
+    display: block;
+    width: 100%;
+}
+
+.mobile-menu .nav-link {
+    padding: 10px 15px;
+    display: block;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+@media (max-width: 767.98px) {
+    .desktop-menu {
+        display: none;
+    }
+    
+    .hamburger-menu {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.bg-card {
+    background-color: #F5F5F5 !important;
+}
+
+/* Stats section styles */
+.stats .stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.stats .stat-text {
+    min-width: 120px;
+    text-align: left;
+}
+
+.stats .stat-label {
+    display: block;
+    font-size: 1rem;
+    line-height: 1.3;
+}
+
+@media (min-width: 768px) {
+    .stats .stat-item {
+        align-items: center;
+    }
+    
+    .stats .stat-number {
+        margin-right: 15px;
+    }
+
+    .ms-md-3 {
+        margin-left: 0rem !important;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .text-md-start .position-relative {
+        margin: 0 auto !important;
+    }
+    
+    footer .col-12 h5 {
+        text-align: center;
+    }
+}
+
+/* Stats section mobile responsive styles */
+@media (max-width: 767.98px) {
+    .stats .container {
+        flex-direction: column !important;
+        align-items: stretch !important;
+    }
+    
+    .stats .stat-item {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        margin-bottom: 1rem !important;
+        padding: 0.5rem 1rem !important;
+        width: 100% !important;
+
+         border-bottom: 1px solid rgba(255, 255, 255, 0.3)
+    }
+
+    .stats .stat-item:last-child {
+      border-bottom: none !important;
+    }
+
+    
+    .stats .stat-number {
+        margin: 0 !important;
+        flex-shrink: 0 !important;
+        order: 1 !important;
+    }
+    
+    .stats .stat-text {
+        order: 2 !important;
+        margin: 0 !important;
+        margin-left: auto !important;
+    }
+}
+
+.profile-card {
+    background-color: #F5F7FA;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-4px);
+}
+
+.distribution-network {
+    background: linear-gradient(135deg, #1565A5, #1E88E5);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.network-card:hover {
+    transform: translateY(-4px);
+}
+
+.intro-text,
+.footer-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #e3f2fd;
+}
+
+.feature-box {
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 8px;
+    padding: 1rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    height: 100%;
+    transition: background 0.3s;
+}
+
+.feature-box:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.feature-icon {
+    font-size: 1.5rem;
+    color: #fff;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.otc-ethical-section {
+  background: linear-gradient(135deg, #f5f7fa, #e0ecf7);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1565A5;
+  margin-bottom: 0.75rem;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1565A5;
+}
+
+.info-box {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.info-box:hover {
+  transform: translateY(-4px);
+}
+
+.styled-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+}
+
+.styled-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.styled-list .icon {
+  font-size: 1.2rem;
+  color: #1565A5;
+  margin-right: 10px;
+}
+
+.info-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.image-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.img-stretch {
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+}
