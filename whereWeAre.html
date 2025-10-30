@@ -51,19 +51,26 @@
                 <ul class="nav desktop-menu">
                     <li class="nav-item"><a href="whoWeAre.html" class="text-primary nav-link ">Who we are</a>
                     </li>
-                    <li class="nav-item"><a href="whatWeDo.html" class="text-primary nav-link ">What we do</a>
+                    <li class="nav-item dropdown">
+                        <a href="whatWeDo.html" class="text-primary nav-link dropdown-toggle" id="whatWeDoDropdown">What
+                            we do</a>
+                        <div class="dropdown-menu what-we-do-dropdown">
+                            <a class="dropdown-item text-primary" href="otc.html">OTC Division</a>
+                            <a class="dropdown-item text-primary" href="ethicalDivision.html">Ethical
+                                Division</a>
+                        </div>
                     </li>
                     <li class="nav-item"><a href="whereWeAre.html" class="text-primary nav-link active">Where we are</a>
                     </li>
                     <li class="nav-item"><a href="workWithUs.html" class="text-primary nav-link">Work with us</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-search"></i><span
-                                class="visually-hidden">Search</span></a></li>
+                    <!-- <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-search"></i><span
+                                class="visually-hidden">Search</span></a></li> -->
                 </ul>
 
                 <!-- Mobile hamburger menu -->
                 <div class="hamburger-menu">
-                    <a href="#" class="nav-link me-2"><i class="bi bi-search"></i><span
-                            class="visually-hidden">Search</span></a>
+                    <!-- <a href="#" class="nav-link me-2"><i class="bi bi-search"></i><span
+                            class="visually-hidden">Search</span></a> -->
                     <a href="javascript:void(0);" onclick="toggleMobileMenu(); return false;" id="hamburgerMenuBtn"
                         class="nav-link text-primary" aria-label="Toggle navigation menu">
                         <i class="bi bi-list" style="font-size: 1.5rem;"></i>
@@ -74,7 +81,14 @@
                         <ul class="nav flex-column">
                             <li class="nav-item"><a href="whoWeAre.html" class="text-primary nav-link">Who we are</a>
                             </li>
-                            <li class="nav-item"><a href="whatWeDo.html" class="text-primary nav-link">What we do</a>
+                            <li class="nav-item">
+                                <a href="whatWeDo.html" class="text-primary nav-link">What we do</a>
+                                <ul class="nav flex-column mobile-submenu">
+                                    <li class="nav-item"><a href="otc.html" class="text-primary nav-link ps-4">OTC
+                                            Division</a></li>
+                                    <li class="nav-item"><a href="ethicalDivision.html"
+                                            class="text-primary nav-link ps-4">Ethical Division</a></li>
+                                </ul>
                             </li>
                             <li class="nav-item"><a href="whereWeAre.html" class="text-primary nav-link active">Where we
                                     are</a></li>
@@ -86,11 +100,13 @@
             </nav>
         </header>
 
-        <section class="hero" style="background: url('assets/imgs/worldMap.jpg') center center/cover no-repeat;">
-            <div class="container text-white">
-                <div class="row">
-                    <div class="col-md-6 d-flex flex-column justify-content-center">
-                        <h1 class="text-primary heading-text-h1">Where we are</h1>
+        <section class="hero">
+            <div class="hero-bg" style="background: url('assets/imgs/worldMap.jpg') center center/cover no-repeat;">
+                <div class="container text-white hero-text">
+                    <div class="row">
+                        <div class="col-md-6 col-4 d-flex flex-column justify-content-center">
+                            <h1 class="text-primary heading-text-h1">Where we are</h1>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -105,17 +121,15 @@
             <div class="container">
                 <div class="row align-items-stretch">
                     <!-- Image Column -->
-                    <div class="col-md-5 d-flex">
-                        <div class="image-wrapper d-flex align-items-stretch ">
+                    <div class="col-md-5">
+                        <div class="d-flex align-items-stretch mt-md-4">
                             <img src="./assets/imgs/IndiaMap 1.png" class="img-stretch" alt="India Map">
                         </div>
                     </div>
 
-                    <!-- Content Column -->
                     <div class="col-12 col-md-7 d-flex">
-                        <div class="content-wrapper w-100 p-4">
-                            <!-- Your content boxes remain unchanged -->
-                            <div class="info-box mb-4">
+                        <div class="content-wrapper w-100 mt-md-0 mt-4">
+                            <div class="info-box mb-3">
                                 <h3 class="section-title">Our OTC Team Reaches</h3>
                                 <ul class="styled-list">
                                     <li><i class="bi bi-shop-window icon"></i> 150,000+ Retail Outlets</li>
@@ -129,7 +143,7 @@
                                 </p>
                             </div>
 
-                            <div class="info-box mb-4">
+                            <div class="info-box mb-3">
                                 <h3 class="section-title">Our Ethical Team Works Closely With</h3>
                                 <ul class="styled-list">
                                     <li><i class="bi bi-person-badge icon"></i> 10,200+ Doctors</li>
@@ -141,7 +155,7 @@
                             <div class="info-box">
                                 <h4 class="section-subtitle">Supported By</h4>
                                 <p class="info-text">
-                                    We market 92+ SKUs across modern contraceptives, women’s healthcare, and general
+                                    We market 92+ products across modern contraceptives, women’s healthcare, and general
                                     wellness.
                                 </p>
                             </div>
@@ -151,21 +165,17 @@
             </div>
         </section>
 
-
-
-        <section class="container-fluid px-0" style="margin-top: 80px;">
+        <section class="container-fluid px-0" style="margin-top: 10px;">
             <div class="row no-gutters">
                 <div class="col-12 text-center mb-3">
                     <h2 class="text-primary">Global Reach</h2>
                 </div>
                 <div class="col-12 text-center mb-3">
-                    <p style="white-space: pre-line;">
+                    <p class="px-4">
                         We proudly serve markets in Timor-Leste, Cambodia, Laos, Nepal, Sri Lanka, and South Sudan, with
                         product registrations underway in several more countries.
                         All offerings are customized for local needs and priced to ensure access and equity
                     </p>
-                    <!-- <img src="./assets/imgs/worldMap.jpg" class="img-fluid w-100" alt="World Map"
-                        style="margin-top: -10px; max-height: auto; object-fit: cover;"> -->
                     <div id="world-map"
                         style="max-width: 100%; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
                     </div>
@@ -200,10 +210,6 @@
                             </div>
                         </div>
                     </div>
-                    <p class="footer-text mt-3">
-                        Stock deliveries are processed via advance NEFT or current-dated cheques,
-                        ensuring efficiency and trust at every step.
-                    </p>
                 </div>
             </div>
         </section>
@@ -217,9 +223,7 @@
                         <img src="assets/imgs/logo.png" alt="ISM Logo" class="img-fluid mb-1"
                             style="height:45px; width: 125px;">
                         <div class="text-muted text-primary">
-                            <div id="shortText">Copyright © 2025 ISM Corporation<br>All rights reserved<br>
-                                ISM Corporation is an international marketing</div>
-                            <div id="fullText" style="display: none;">Copyright © 2025 ISM Corporation<br>All rights
+                            <div id="fullText">Copyright © 2025 ISM Corporation<br>All rights
                                 reserved<br>
                                 ISM Corporation is an international marketing organization based in Hyderabad, India.
                                 Our
@@ -228,8 +232,8 @@
                                 finance. We operate on the principle of collective wisdom to drive our strategic
                                 decisions and
                                 business operations.</div>
-                            <a href="#" id="toggleText" style="color: #0066cc; font-weight: 500;"
-                                onclick="toggleFooterText(); return false;">View More</a>
+                            <!-- <a href="#" id="toggleText" style="color: #0066cc; font-weight: 500;"
+                                onclick="toggleFooterText(); return false;">View More</a> -->
                         </div>
                     </div>
                     <div class="col-12 col-md-4 mb-4 text-center text-md-start">

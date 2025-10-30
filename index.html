@@ -24,17 +24,25 @@
                 <ul class="nav desktop-menu">
                     <li class="nav-item"><a href="whoWeAre.html" class="text-primary nav-link active">Who we are</a>
                     </li>
-                    <li class="nav-item"><a href="whatWeDo.html" class="text-primary nav-link">What we do</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="whatWeDo.html" class="text-primary nav-link dropdown-toggle" id="whatWeDoDropdown">What
+                            we do</a>
+                        <div class="dropdown-menu what-we-do-dropdown">
+                            <a class="dropdown-item text-primary" href="otc.html">OTC Division</a>
+                            <a class="dropdown-item text-primary" href="ethicalDivision.html">Ethical
+                                Division</a>
+                        </div>
+                    </li>
                     <li class="nav-item"><a href="whereWeAre.html" class="text-primary nav-link">Where we are</a></li>
                     <li class="nav-item"><a href="workWithUs.html" class="text-primary nav-link">Work with us</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-search"></i><span
-                                class="visually-hidden">Search</span></a></li>
+                    <!-- <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-search"></i><span
+                                class="visually-hidden">Search</span></a></li> -->
                 </ul>
 
                 <!-- Mobile hamburger menu -->
                 <div class="hamburger-menu">
-                    <a href="#" class="nav-link me-2"><i class="bi bi-search"></i><span
-                            class="visually-hidden">Search</span></a>
+                    <!-- <a href="#" class="nav-link me-2"><i class="bi bi-search"></i><span
+                            class="visually-hidden">Search</span></a> -->
                     <a href="javascript:void(0);" onclick="toggleMobileMenu(); return false;" id="hamburgerMenuBtn"
                         class="nav-link text-primary" aria-label="Toggle navigation menu">
                         <i class="bi bi-list" style="font-size: 1.5rem;"></i>
@@ -45,7 +53,14 @@
                         <ul class="nav flex-column">
                             <li class="nav-item"><a href="whoWeAre.html" class="text-primary nav-link active">Who we
                                     are</a></li>
-                            <li class="nav-item"><a href="whatWeDo.html" class="text-primary nav-link">What we do</a>
+                            <li class="nav-item">
+                                <a href="whatWeDo.html" class="text-primary nav-link">What we do</a>
+                                <ul class="nav flex-column mobile-submenu">
+                                    <li class="nav-item"><a href="otc.html" class="text-primary nav-link ps-4">OTC
+                                            Division</a></li>
+                                    <li class="nav-item"><a href="ethicalDivision.html"
+                                            class="text-primary nav-link ps-4">Ethical Division</a></li>
+                                </ul>
                             </li>
                             <li class="nav-item"><a href="whereWeAre.html" class="text-primary nav-link">Where we
                                     are</a></li>
@@ -57,15 +72,17 @@
             </nav>
         </header>
 
-        <section class="hero"
-            style="background: url('assets/imgs/home_bg_header.jpg') center center/cover no-repeat; background-size: cover; min-height: 500px;">
-            <div class="container text-white">
-                <div class="row">
-                    <div class="col-md-6 d-flex flex-column justify-content-center">
-                        <h1 class="text-primary heading-text-h1">ISM Corporation</h1>
-                        <h2 class="h3 text-dark">
-                            Empowering Lives with Access to Reproductive Healthcare Choices
-                        </h2>
+        <section class="hero">
+            <div class="hero-bg"
+                style="background: url('assets/imgs/home_bg_header.jpg') center center/cover no-repeat;">
+                <div class="container text-white hero-text">
+                    <div class="row">
+                        <div class="col-6 d-flex flex-column justify-content-center">
+                            <h1 class="text-primary heading-text-h1">ISM Corporation</h1>
+                            <h2 class="h3 text-dark heading-text-h2">
+                                Empowering lives with access to affordable reproductive health care choices
+                            </h2>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -94,6 +111,12 @@
                         <span class="stat-label">Abortions Averted</span>
                     </div>
                 </div>
+                <div class="d-md-flex flex-row align-items-center justify-content-between stat-item">
+                    <h3 class="h1 mb-0 stat-number">156.1M</h3>
+                    <div class="d-flex flex-column mb-0 stat-text ms-md-3">
+                        <span class="stat-label">OCT</span>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -117,129 +140,141 @@
 
         <section class="container-fluid py-3">
             <div class="row">
-                <div class="col-12 col-md-3 d-flex justify-content-center">
-                    <h2 class="text-primary mb-4">Our People</h2>
-                </div>
-            </div>
-            <div class="profile-card row align-items-center mb-5">
-                <div class="col-md-4 text-center mb-3 mb-md-0">
-                    <img src="./assets/imgs/placeholder.jpg" alt="Vivek Malhotra" class="img-fluid rounded shadow"
-                        style="max-width: 250px;">
-                </div>
-                <div class="col-md-8">
-                    <h2 class="text-primary">Vivek Malhotra</h2>
-                    <p>
-                        Vivek has 3 decades of expertise in conceptualizing, assessing, and executing contraceptive
-                        social marketing initiatives across diverse regions such as India, Uganda, Kenya, Zambia, Sri
-                        Lanka, Tanzania, Nepal, and Sudan. Currently at the helm of ISM Corporation Pvt Ltd as its
-                        Director, he has steered the organization into a prominent role as a leading social marketing
-                        entity. ISM, under his stewardship, has established itself as a significant provider of
-                        cost-effective family planning and reproductive health commodities to countless couples
-                        nationwide
-                    </p>
-                    <p>
-                        A distinguished chartered accountant accredited by The Institute of Chartered Accountants of
-                        India, Vivek commenced his professional journey within the financial realm at Population
-                        Services International. His trajectory led him to assume the role of Country Director for MSI
-                        Reproductive Choices in Uganda in 1995, before returning to India in 1999 to establish and lead
-                        PHSI.
-                    </p>
+                <div class="col-12 text-center mb-5">
+                    <h2 class="text-primary">Our People</h2>
                 </div>
             </div>
 
-            <div class="profile-card row align-items-center flex-md-row-reverse mb-5">
-                <div class="col-md-4 text-center mb-3 mb-md-0">
-                    <img src="./assets/imgs/placeholder.jpg" alt="Ashutosh Kaushik" class="img-fluid rounded shadow"
-                        style="max-width: 250px;">
-                </div>
-                <div class="col-md-8">
-                    <h2 class="text-primary">Ashutosh Kaushik</h2>
-                    <p>
-                        Mr. Ashutosh Kaushik has over two decades of distinguished experience across the corporate and
-                        development sectors. He has held senior positions within various international non-profit
-                        organizations. For the past ten years, Mr. Kaushik has specialized in the field of Sexual and
-                        Reproductive Health and Rights (SRHR), concentrating on contraception and safe abortion
-                        services. Currently, Mr. Kaushik serves as the Chief Executive Officer of the Foundation for
-                        Reproductive Health Services India (FRHS India). Under his leadership, FRHS India is committed
-                        to providing high-quality family planning and reproductive health services through diverse
-                        delivery channels. In addition to his role at FRHS India, Mr. Kaushik is a board member of the
-                        organization and acts as a trustee for the Sarvajan Unnati Bodhini Trust, a non-profit entity
-                        dedicated to comprehensive community development.
-
-                    </p>
-                </div>
-            </div>
-
-            <div class="profile-card row align-items-center mb-5">
-                <div class="col-md-4 text-center mb-3 mb-md-0">
-                    <img src="./assets/imgs/placeholder.jpg" alt="P. Srinivas" class="img-fluid rounded shadow"
-                        style="max-width: 250px;">
-                </div>
-                <div class="col-md-8">
-                    <h2 class="text-primary">P. Srinivas</h2>
-                    <p>
-                        Srinivas, the current Director of Sales at ISM Corporation Pvt Ltd (ISMI), boasts over 23 years
-                        of strong experience in sales, marketing, and business management across diverse sectors.
-                        Commencing his journey as a Front-Line Sales Manager in PHSI, Srinivas has ascended the
-                        organizational hierarchy, garnering profound insights into the business landscape and strategic
-                        framework. His unwavering dedication and steadfast commitment are exemplified by his adept
-                        management of a large sales force.
-                    </p>
-                    <p>
-                        In his capacity as Director of Sales, Srinivas orchestrates all sales-related endeavours,
-                        encompassing marketing initiatives, talent acquisition, and the implementation of varied sales
-                        strategies aimed at fortifying ISM's competitive stance amidst industry rivals. Instrumental to
-                        the organization's expansion trajectory, he possesses a wealth of expertise in devising sales
-                        strategies and driving business growth. Drawing from an extensive collection of sales roles,
-                        on-time delivery, and compliance.
-                    </p>
-                </div>
-            </div>
-    </div>
-    </section>
-
-    <footer class="bg-lt-primary border-top">
-        <div class="container py-5">
-            <div class="row justify-content-between">
-                <div class="col-12 col-md-4 mb-4 text-center text-md-start">
-                    <img src="assets/imgs/logo.png" alt="ISM Logo" class="img-fluid mb-1"
-                        style="height:45px; width: 125px;">
-                    <div class="text-muted text-primary">
-                        <div id="shortText">Copyright © 2025 ISM Corporation<br>All rights reserved<br>
-                        ISM Corporation is an international marketing</div>
-                        <div id="fullText" style="display: none;">Copyright © 2025 ISM Corporation<br>All rights reserved<br>
-                        ISM Corporation is an international marketing organization based in Hyderabad, India. Our
-                        company is led by a team of seasoned professionals with experience in marketing, sales, and
-                        finance. We operate on the principle of collective wisdom to drive our strategic decisions and
-                        business operations.</div>
-                        <a href="#" id="toggleText" style="color: #0066cc; font-weight: 500;" onclick="toggleFooterText(); return false;">View More</a>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 mb-4 text-center text-md-start">
-                    <h5 class="text-primary">Company</h5>
-                    <div class="d-flex flex-wrap justify-content-center justify-content-md-start gap-3">
-                        <div class="d-flex flex-column">
-                            <a href="whoWeAre.html" class="text-primary text-decoration-none mb-2">Who we are</a>
-                            <a href="whatWeDo.html" class="text-primary text-decoration-none">What we do</a>
-                        </div>
-                        <div class="d-flex flex-column">
-                            <a href="whereWeAre.html" class="text-primary text-decoration-none mb-2">Where we
-                                are</a>
-                            <a href="workWithUs.html" class="text-primary text-decoration-none">Work with us</a>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="profile-card-hover position-relative overflow-hidden rounded shadow">
+                        <img src="./assets/imgs/our_ppl_1.jpg" alt="Vivek Malhotra" class="img-fluid">
+                        <div class="profile-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end">
+                            <div class="profile-content p-2 text-white w-100">
+                                <h2 class="text-white mb-3">Vivek Malhotra</h2>
+                                <p class="mb-2">
+                                    Vivek has 3 decades of expertise in conceptualizing, assessing, and executing
+                                    contraceptive social marketing initiatives across diverse regions such as India,
+                                    Uganda, Kenya, Zambia, Sri Lanka, Tanzania, Nepal, and Sudan. Currently at the helm
+                                    of ISM Corporation Pvt Ltd as its Director, he has steered the organization into a
+                                    prominent role as a leading social marketing entity. ISM, under his stewardship, has
+                                    established itself as a significant provider of cost-effective family planning and
+                                    reproductive health commodities to countless couples nationwide
+                                </p>
+                                <p class="mb-0">
+                                    A distinguished chartered accountant accredited by The Institute of Chartered
+                                    Accountants of India, Vivek commenced his professional journey within the financial
+                                    realm at Population Services International. His trajectory led him to assume the
+                                    role of Country Director for MSI Reproductive Choices in Uganda in 1995, before
+                                    returning to India in 1999 to establish and lead PHSI.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 mb-4 text-center text-md-start">
-                    <h5 class="text-primary">Stay up to date</h5>
-                    <div class="position-relative mt-2" style="max-width: 300px; margin: 0 auto 0 0;">
-                        <input type="email" class="form-control pe-4" placeholder="Your email address">
-                        <img src="assets/imgs/icon.png" alt="Arrow Right" class="position-absolute"
-                            style="right: 10px; top: 50%; transform: translateY(-50%); height: 20px; cursor: pointer;">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="profile-card-hover position-relative overflow-hidden rounded shadow">
+                        <img src="./assets/imgs/our_ppl_2.jpg" alt="Ashutosh Kaushik" class="img-fluid">
+                        <div class="profile-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end">
+                            <div class="profile-content p-2 text-white w-100">
+                                <h2 class="text-white mb-3">Ashutosh Kaushik</h2>
+                                <p class="mb-2">
+                                    Mr. Ashutosh Kaushik has over two decades of distinguished experience across the
+                                    corporate and development sectors. He has held senior positions within various
+                                    international non-profit organizations. For the past ten years, Mr. Kaushik has
+                                    specialized in the field of Sexual and Reproductive Health and Rights (SRHR),
+                                    concentrating on contraception and safe abortion services. Currently, Mr. Kaushik
+                                    serves as the Chief Executive Officer of the Foundation for Reproductive Health
+                                    Services India (FRHS India).
+                                </p>
+                                <p class="mb-0">
+                                    Under his leadership, FRHS India is committed to
+                                    providing high-quality family planning and reproductive health services through
+                                    diverse delivery channels. In addition to his role at FRHS India, Mr. Kaushik is a
+                                    board member of the organization and acts as a trustee for the Sarvajan Unnati
+                                    Bodhini Trust, a non-profit entity dedicated to comprehensive community development.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="profile-card-hover position-relative overflow-hidden rounded shadow">
+                        <img src="./assets/imgs/our_ppl_3.jpg" alt="P. Srinivas" class="img-fluid">
+                        <div class="profile-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end">
+                            <div class="profile-content p-2 text-white w-100">
+                                <h2 class="text-white mb-3">P. Srinivas</h2>
+                                <p class="mb-2">
+                                    Srinivas, the current Director of Sales at ISM Corporation Pvt Ltd (ISMI), boasts
+                                    over 23 years of strong experience in sales, marketing, and business management
+                                    across diverse sectors. Commencing his journey as a Front-Line Sales Manager in
+                                    PHSI, Srinivas has ascended the organizational hierarchy, garnering profound
+                                    insights into the business landscape and strategic framework. His unwavering
+                                    dedication and steadfast commitment are exemplified by his adept management of a
+                                    large sales force.
+                                </p>
+                                <p class="mb-0">
+                                    In his capacity as Director of Sales, Srinivas orchestrates all sales-related
+                                    endeavours, encompassing marketing initiatives, talent acquisition, and the
+                                    implementation of varied sales strategies aimed at fortifying ISM's competitive
+                                    stance amidst industry rivals. Instrumental to the organization's expansion
+                                    trajectory, he possesses a wealth of expertise in devising sales strategies and
+                                    driving business growth. Drawing from an extensive collection of sales roles,
+                                    on-time delivery, and compliance.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </section>
+
+        <footer class="bg-lt-primary border-top">
+            <div class="container py-5">
+                <div class="row justify-content-between">
+                    <div class="col-12 col-md-4 mb-4 text-center text-md-start">
+                        <img src="assets/imgs/logo.png" alt="ISM Logo" class="img-fluid mb-1"
+                            style="height:45px; width: 125px;">
+                        <div class="text-muted text-primary">
+                            <div id="fullText">Copyright © 2025 ISM Corporation<br>All rights
+                                reserved<br>
+                                ISM Corporation is an international marketing organization based in Hyderabad, India.
+                                Our
+                                company is led by a team of seasoned professionals with experience in marketing, sales,
+                                and
+                                finance. We operate on the principle of collective wisdom to drive our strategic
+                                decisions
+                                and
+                                business operations.</div>
+                            <!-- <a href="javascript:void(0);" id="toggleText" style="color: #0066cc; font-weight: 500;"
+                                onclick="toggleFooterText()">View More</a> -->
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mb-4 text-center text-md-start">
+                        <h5 class="text-primary">Company</h5>
+                        <div class="d-flex flex-wrap justify-content-center justify-content-md-start gap-3">
+                            <div class="d-flex flex-column">
+                                <a href="whoWeAre.html" class="text-primary text-decoration-none mb-2">Who we are</a>
+                                <a href="whatWeDo.html" class="text-primary text-decoration-none">What we do</a>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <a href="whereWeAre.html" class="text-primary text-decoration-none mb-2">Where we
+                                    are</a>
+                                <a href="workWithUs.html" class="text-primary text-decoration-none">Work with us</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mb-4 text-center text-md-start">
+                        <h5 class="text-primary">Stay up to date</h5>
+                        <div class="position-relative mt-2" style="max-width: 300px; margin: 0 auto 0 0;">
+                            <input type="email" class="form-control pe-4" placeholder="Your email address">
+                            <img src="assets/imgs/icon.png" alt="Arrow Right" class="position-absolute"
+                                style="right: 10px; top: 50%; transform: translateY(-50%); height: 20px; cursor: pointer;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
@@ -278,8 +313,11 @@
             const shortText = document.getElementById('shortText');
             const fullText = document.getElementById('fullText');
             const toggleButton = document.getElementById('toggleText');
-            
-            if (fullText.style.display === 'none') {
+
+            // Check if fullText is currently hidden (either display: none or not visible)
+            const isHidden = fullText.style.display === 'none' || window.getComputedStyle(fullText).display === 'none';
+
+            if (isHidden) {
                 shortText.style.display = 'none';
                 fullText.style.display = 'block';
                 toggleButton.textContent = 'View Less';

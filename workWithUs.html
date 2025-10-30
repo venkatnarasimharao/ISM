@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/workWithUs.css">
     <link rel="shortcut icon" type="image/x-icon" href="/assets/imgs/header_icon.png">
 </head>
 
@@ -23,68 +24,109 @@
                 <ul class="nav desktop-menu">
                     <li class="nav-item"><a href="whoWeAre.html" class="text-primary nav-link ">Who we are</a>
                     </li>
-                    <li class="nav-item"><a href="whatWeDo.html" class="text-primary nav-link">What we do</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="whatWeDo.html" class="text-primary nav-link dropdown-toggle" id="whatWeDoDropdown">What
+                            we do</a>
+                        <div class="dropdown-menu what-we-do-dropdown">
+                            <a class="dropdown-item text-primary" href="otc.html">OTC Division</a>
+                            <a class="dropdown-item text-primary" href="ethicalDivision.html">Ethical
+                                Division</a>
+                        </div>
+                    </li>
                     <li class="nav-item"><a href="whereWeAre.html" class="text-primary nav-link">Where we are</a></li>
                     <li class="nav-item"><a href="workWithUs.html" class="text-primary nav-link active">Work with us</a>
                     </li>
-                    <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-search"></i><span
-                                class="visually-hidden">Search</span></a></li>
+                    <!-- <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-search"></i><span
+                                class="visually-hidden">Search</span></a></li> -->
                 </ul>
-                
+
                 <!-- Mobile hamburger menu -->
                 <div class="hamburger-menu">
-                    <a href="#" class="nav-link me-2"><i class="bi bi-search"></i><span class="visually-hidden">Search</span></a>
-                    <a href="javascript:void(0);" onclick="toggleMobileMenu(); return false;" id="hamburgerMenuBtn" class="nav-link text-primary" aria-label="Toggle navigation menu">
+                    <!-- <a href="#" class="nav-link me-2"><i class="bi bi-search"></i><span
+                            class="visually-hidden">Search</span></a> -->
+                    <a href="javascript:void(0);" onclick="toggleMobileMenu(); return false;" id="hamburgerMenuBtn"
+                        class="nav-link text-primary" aria-label="Toggle navigation menu">
                         <i class="bi bi-list" style="font-size: 1.5rem;"></i>
                         <span class="visually-hidden">Menu</span>
                     </a>
                     <!-- Dropdown menu for mobile -->
                     <div id="mobileMenu" class="mobile-menu">
                         <ul class="nav flex-column">
-                            <li class="nav-item"><a href="whoWeAre.html" class="text-primary nav-link">Who we are</a></li>
-                            <li class="nav-item"><a href="whatWeDo.html" class="text-primary nav-link">What we do</a></li>
-                            <li class="nav-item"><a href="whereWeAre.html" class="text-primary nav-link">Where we are</a></li>
-                            <li class="nav-item"><a href="workWithUs.html" class="text-primary nav-link active">Work with us</a></li>
+                            <li class="nav-item"><a href="whoWeAre.html" class="text-primary nav-link">Who we are</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="whatWeDo.html" class="text-primary nav-link">What we do</a>
+                                <ul class="nav flex-column mobile-submenu">
+                                    <li class="nav-item"><a href="otc.html" class="text-primary nav-link ps-4">OTC
+                                            Division</a></li>
+                                    <li class="nav-item"><a href="ethicalDivision.html"
+                                            class="text-primary nav-link ps-4">Ethical Division</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a href="whereWeAre.html" class="text-primary nav-link">Where we
+                                    are</a></li>
+                            <li class="nav-item"><a href="workWithUs.html" class="text-primary nav-link active">Work
+                                    with us</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </header>
 
-        <section class="hero" style="background: url('assets/imgs/work_with_us.jpg') center center/cover no-repeat;">
-            <div class="container text-white">
-                <div class="row">
-                    <div class="col-md-4 d-flex flex-column justify-content-center">
-                        <h1 class="text-primary heading-text-h1">Work with Us</h1>
+        <section class="hero">
+            <div class="hero-bg" style="background: url('assets/imgs/work_with_us.jpg') center center/cover no-repeat;">
+                <div class="container text-white hero-text">
+                    <div class="row">
+                        <div class="col-md-4 d-flex flex-column justify-content-center">
+                            <h1 class="text-primary d-md-block d-none heading-text-h1 mb-0">Work with Us</h1>
+                            <h1 class="text-primary heading-text-h1 mb-0 d-md-none d-block">Work with <br> Us</h1>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-
-        <section class="container-fluid py-5 px-md-5">
-            <div class="row align-items-center flex-md-row flex-column">
-                <div class="col-12 col-md-8 ps-md-4">
-                    <h2 class="text-primary">About Us</h2>
-                    <p class="lh-lg">
-                        ISM Corporation is an international marketing organization based in Hyderabad, India. Our company is led by a team of seasoned professionals with experience in marketing, sales, and finance. We operate on the principle of collective wisdom to drive our strategic decisions and business operations.
-                    </p>
-
-                    <div class="mt-4 d-flex flex-column flex-md-row align-items-start align-items-md-center">
-                        <div class="d-flex align-items-center me-md-4 mb-3 mb-md-0">
-                            <img src="assets/imgs/phone-call 1.png" alt="Phone Icon" class="me-2"
-                                style="height:30px; width:auto;">
-                            <span>9246203107</span>
-                        </div>
-
-                        <div class="d-flex align-items-center">
-                            <img src="assets/imgs/phone-call 2.png" alt="Email Icon" class="me-2"
-                                style="height:30px; width:auto;">
-                            <span>info@ismcorporation.net</span>
-                        </div>
+        <section class="container-fluid py-5">
+            <div class="row align-items-start">
+                <div class="col-12">
+                    <div class="container">
+                        <h2 class="text-primary fw-bold mb-4">About Us</h2>
+                        <p class="lh-lg fs-5 text-secondary">
+                            Get in touch with us if you have the passion to make healthcare products accessible to
+                            everyone. We value and nurture talents from various backgrounds and geographies.
+                        </p>
                     </div>
-                </div>
+                    <section class="contact-section text-center py-5 mt-5">
+                        <div class="container">
+                            <h2 class="fw-bold mb-4">Let’s Connect with ISM</h2>
+                            <p class="text-muted mb-5 fs-5">
+                                Reach out to us anytime - we’d love to hear from you.
+                            </p>
+                            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-5">
+                                <a href="tel:9246203107" class="contact-item">
+                                    <div class="icon-circle">
+                                        <i class="bi bi-telephone-fill"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-1">Call Us</h5>
+                                        <p class="mb-0">+91 92462 03107</p>
+                                    </div>
+                                </a>
+                                <div class="vr d-none d-md-block"></div>
+                                <a href="mailto:info@ismcorporation.net" class="contact-item">
+                                    <div class="icon-circle">
+                                        <i class="bi bi-envelope-fill"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-1">Email Us</h5>
+                                        <p class="mb-0">info@ismcorporation.net</p>
+                                    </div>
+                                </a>
 
+                            </div>
+                        </div>
+                    </section>
+                </div>
             </div>
         </section>
 
@@ -95,15 +137,18 @@
                         <img src="assets/imgs/logo.png" alt="ISM Logo" class="img-fluid mb-1"
                             style="height:45px; width: 125px;">
                         <div class="text-muted text-primary">
-                        <div id="shortText">Copyright © 2025 ISM Corporation<br>All rights reserved<br>
-                        ISM Corporation is an international marketing</div>
-                        <div id="fullText" style="display: none;">Copyright © 2025 ISM Corporation<br>All rights reserved<br>
-                        ISM Corporation is an international marketing organization based in Hyderabad, India. Our
-                        company is led by a team of seasoned professionals with experience in marketing, sales, and
-                        finance. We operate on the principle of collective wisdom to drive our strategic decisions and
-                        business operations.</div>
-                        <a href="#" id="toggleText" style="color: #0066cc; font-weight: 500;" onclick="toggleFooterText(); return false;">View More</a>
-                    </div>
+                            <div id="fullText">Copyright © 2025 ISM Corporation<br>All rights
+                                reserved<br>
+                                ISM Corporation is an international marketing organization based in Hyderabad, India.
+                                Our
+                                company is led by a team of seasoned professionals with experience in marketing, sales,
+                                and
+                                finance. We operate on the principle of collective wisdom to drive our strategic
+                                decisions and
+                                business operations.</div>
+                            <!-- <a href="#" id="toggleText" style="color: #0066cc; font-weight: 500;"
+                                onclick="toggleFooterText(); return false;">View More</a> -->
+                        </div>
                     </div>
                     <div class="col-12 col-md-4 mb-4 text-center text-md-start">
                         <h5 class="text-primary">Company</h5>
@@ -135,26 +180,26 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script>
         // Inline script for hamburger menu
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             // Close menu when clicking outside
-            document.addEventListener('click', function(event) {
+            document.addEventListener('click', function (event) {
                 const mobileMenu = document.getElementById('mobileMenu');
                 const hamburgerBtn = document.getElementById('hamburgerMenuBtn');
-                
+
                 if (mobileMenu && mobileMenu.classList.contains('show')) {
                     if (!mobileMenu.contains(event.target) && (!hamburgerBtn || !hamburgerBtn.contains(event.target))) {
                         mobileMenu.classList.remove('show');
                     }
                 }
             });
-            
+
             // Initialize - close menu on page load
             const mobileMenu = document.getElementById('mobileMenu');
             if (mobileMenu) {
                 mobileMenu.classList.remove('show');
             }
         });
-        
+
         // Toggle mobile menu function that can be called from anywhere
         function toggleMobileMenu() {
             const mobileMenu = document.getElementById('mobileMenu');
@@ -168,7 +213,7 @@
             const shortText = document.getElementById('shortText');
             const fullText = document.getElementById('fullText');
             const toggleButton = document.getElementById('toggleText');
-            
+
             if (fullText.style.display === 'none') {
                 shortText.style.display = 'none';
                 fullText.style.display = 'block';
