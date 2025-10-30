@@ -34,13 +34,8 @@
 
 @media (max-width: 768px) {
   .hero-bg {
-    height: 35vh !important;
+    height: 33vh !important;
   }
-
-  .hero-bg.what-we-do-bg {
-    height: 26vh !important;
-  }
-
 
   .heading-text-h1 {
     font-size: 30px !important;
@@ -53,11 +48,7 @@
 
 @media (max-width: 480px) {
   .hero-bg {
-    height: 26vh !important;
-  }
-
-    .hero-bg.what-we-do-bg {
-    height: 19vh !important;
+    height: 24vh !important;
   }
 
   .heading-text-h1 {

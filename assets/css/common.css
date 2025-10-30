@@ -2,6 +2,10 @@
     font-family: 'Helvetica Neue Regular'
 }
 
+.fs-ism {
+    font-size: 1.1rem !important;
+}
+
 .text-primary {
     color: #1565A5 !important;
 }
@@ -378,6 +382,7 @@
 }
 
 .product-description {
+    font-size: 1.1rem;
     line-height: 1.5;
     color: #666;
 }
