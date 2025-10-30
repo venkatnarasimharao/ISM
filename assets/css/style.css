@@ -34,7 +34,7 @@
 
 @media (max-width: 768px) {
   .hero-bg {
-    height: 30vh !important;
+    height: 35vh !important;
   }
 
   .hero-bg.what-we-do-bg {
@@ -53,7 +53,7 @@
 
 @media (max-width: 480px) {
   .hero-bg {
-    height: 22vh !important;
+    height: 26vh !important;
   }
 
     .hero-bg.what-we-do-bg {
