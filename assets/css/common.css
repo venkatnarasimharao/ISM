@@ -1,4 +1,4 @@
-*{
+* {
     font-family: 'Helvetica Neue Regular'
 }
 
@@ -19,8 +19,8 @@
 }
 
 .nav-link.active {
-    outline: 1px solid #1565A5 !important;
-    outline-offset: -2px !important;
+    border-radius: 30px;
+    box-shadow: 0 0 0 1px #1565A5;
 }
 
 /* Desktop dropdown menu styles */
@@ -394,28 +394,28 @@
         text-align: center !important;
         align-items: center !important;
     }
-    
+
     .product-image {
         margin-right: 0 !important;
         margin-bottom: 1rem !important;
     }
-    
+
     .product-image img {
         max-width: 200px !important;
         height: 200px !important;
         object-fit: contain !important;
     }
-    
+
     .product-content {
         text-align: center !important;
         max-width: 100% !important;
     }
-    
+
     .product-content h6 {
         font-size: 1.1rem !important;
         margin-bottom: 1rem !important;
     }
-    
+
     .product-description {
         font-size: 0.9rem !important;
         max-width: 300px !important;
@@ -428,13 +428,13 @@
     .contraceptives-section .row {
         justify-content: center !important;
     }
-    
+
     .contraceptives-section .col-md-6 {
         flex: 0 0 50% !important;
         max-width: 50% !important;
         margin-bottom: 2rem !important;
     }
-    
+
     .contraceptives-section .col-lg-4:nth-child(3) {
         flex: 0 0 100% !important;
         max-width: 100% !important;
@@ -494,28 +494,28 @@
         text-align: center !important;
         align-items: center !important;
     }
-    
+
     .iud-section .product-image {
         margin-right: 0 !important;
         margin-bottom: 1rem !important;
     }
-    
+
     .iud-section .product-image img {
         max-width: 150px !important;
         height: 150px !important;
         object-fit: contain !important;
     }
-    
+
     .iud-section .product-content {
         text-align: center !important;
         max-width: 100% !important;
     }
-    
+
     .iud-section .product-content h6 {
         font-size: 1.1rem !important;
         margin-bottom: 1rem !important;
     }
-    
+
     .iud-section .product-description {
         font-size: 0.9rem !important;
         max-width: 300px !important;
@@ -530,43 +530,43 @@
         align-items: flex-start !important;
         text-align: left !important;
     }
-    
+
     .product-image,
     .product-image-container {
         margin-right: 1.5rem !important;
         margin-bottom: 0 !important;
         flex-shrink: 0 !important;
     }
-    
+
     .product-content {
         text-align: left !important;
         flex: 1 !important;
     }
-    
+
     .ethical-division .product-item {
         flex-direction: row !important;
         align-items: flex-start !important;
     }
-    
+
     .ethical-division .product-image {
         margin-right: 1.5rem !important;
         margin-bottom: 0 !important;
     }
-    
+
     .ethical-division .product-content {
         text-align: left !important;
     }
-    
+
     .iud-section .product-item {
         flex-direction: row !important;
         align-items: flex-start !important;
     }
-    
+
     .iud-section .product-image {
         margin-right: 1.5rem !important;
         margin-bottom: 0 !important;
     }
-    
+
     .iud-section .product-content {
         text-align: left !important;
     }
