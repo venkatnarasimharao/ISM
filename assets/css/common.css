@@ -19,8 +19,8 @@
 }
 
 .nav-link.active {
-    border-radius: 30px;
-    box-shadow: 0 0 0 1px #1565A5;
+    border-radius: 45px;
+    box-shadow: 0 0 0 2px #1565A5;
 }
 
 /* Desktop dropdown menu styles */
