@@ -3,7 +3,8 @@
 }
 
 .fs-ism {
-    font-size: 1.1rem !important;
+    /* font-size: 1.1rem !important; */
+    font-size: calc(1.275rem + .3vw) !important;
 }
 
 .text-primary {
@@ -569,5 +570,22 @@
 
     .iud-section .product-content {
         text-align: left !important;
+    }
+}
+
+/* Mobile responsive hero section */
+@media (max-width: 768px) {
+    .hero {
+        height: 30vh !important;
+        margin-bottom: 0 !important;
+    }
+    .hero .col-6 {
+        padding: 20px !important;
+    }
+    .hero h1 {
+        font-size: 1.5rem !important;
+    }
+    .hero h2 {
+        font-size: 1rem !important;
     }
 }
