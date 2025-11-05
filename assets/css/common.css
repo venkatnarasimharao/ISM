@@ -488,6 +488,18 @@
     background-color: #fff;
 }
 
+.home-page-img-title {
+    background-color: #d6d9dc;
+    padding: 45px 30px 45px 30px;
+    border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    .home-page-img-title {
+        padding: 20px 15px 20px 15px !important;
+    }
+}
+
 /* Medium screens (768px to 991px) - IUD section */
 @media (min-width: 768px) and (max-width: 991.98px) {
     .iud-section .product-item {
@@ -579,12 +591,15 @@
         height: 30vh !important;
         margin-bottom: 0 !important;
     }
+
     .hero .col-6 {
         padding: 20px !important;
     }
+
     .hero h1 {
         font-size: 1.5rem !important;
     }
+
     .hero h2 {
         font-size: 1rem !important;
     }

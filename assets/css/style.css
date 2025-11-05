@@ -11,7 +11,7 @@
 .hero-text {
   position: absolute;
   top: 50%;
-  left: 25px;
+  left: 0;
   width: 100%;
   transform: translateY(-50%);
 }
