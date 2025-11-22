@@ -1,5 +1,5 @@
 * {
-    font-family: 'Helvetica Neue Regular'
+    font-family: 'Helvetica Neue Regular';
 }
 
 .fs-ism {
@@ -383,7 +383,7 @@
 }
 
 .product-description {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     line-height: 1.5;
     color: #666;
 }
